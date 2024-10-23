@@ -1,0 +1,24 @@
+# Ignore system files and folders
+/.aws
+/.azure
+/.bash_history
+/.bashrc
+/.bundle/
+/.cache/
+/.docker/
+/.gitconfig
+/.irb_history
+/.lesshst
+/.local/
+/.npm/
+/.nvm/
+/.vscode-remote-containers/
+/.vscode-server/
+/.motd_shown
+/.sudo_as_admin_successful
+
+# Ignore log and tmp files
+/log/*
+/tmp/*
+
+# Ignore any other specific folders or files you don't want to track
