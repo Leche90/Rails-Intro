@@ -37,10 +37,10 @@
 /yarn.lock
 
 # Ignore auto-generated files and logs
-/log/*
-/tmp/*
-/storage/*
-/public/uploads/*
+# /log/*
+# /tmp/*
+# /storage/*
+# /public/uploads/*
 
 # Ignore database and SQLite files
 /db/*.sqlite3
