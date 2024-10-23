@@ -21,4 +21,33 @@
 /log/*
 /tmp/*
 
-# Ignore any other specific folders or files you don't want to track
+# Ignore IDE/editor specific files
+/.vscode/
+/.idea/
+/.browserslistrc
+
+# Configuration and sensitive data
+/.env
+/.tool-versions
+/config/master.key
+/config/credentials.yml.enc
+
+# Ignore node_modules and yarn.lock (if you're using Yarn)
+/node_modules/
+/yarn.lock
+
+# Ignore auto-generated files and logs
+/log/*
+/tmp/*
+/storage/*
+/public/uploads/*
+
+# Ignore database and SQLite files
+/db/*.sqlite3
+
+# Ignore cache, build, and other temporary files
+/tmp/*
+/.cache/
+/.sass-cache/
+/.bundler/
+/vendor/bundle
