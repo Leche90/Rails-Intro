@@ -1,3 +1,5 @@
+# For creating the join table between cryptocurrencies and users
+
 class CreateJoinTableCryptocurrenciesUsers < ActiveRecord::Migration[6.1]
   def change
     create_join_table :cryptocurrencies, :users do |t|
