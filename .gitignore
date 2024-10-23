@@ -12,9 +12,9 @@
 /.local/
 /.npm/
 /.nvm/
-/.vscode-remote-containers/
-/.vscode-server/
-/.motd_shown
+.vscode-remote-containers/
+.vscode-server/
+.motd_shown
 /.sudo_as_admin_successful
 
 # Ignore log and tmp files
@@ -22,19 +22,19 @@
 /tmp/*
 
 # Ignore IDE/editor specific files
-/.vscode/
-/.idea/
-/.browserslistrc
+.vscode/
+.idea/
+.browserslistrc
 
 # Configuration and sensitive data
-/.env
-/.tool-versions
+.env
+.tool-versions
 /config/master.key
 /config/credentials.yml.enc
 
 # Ignore node_modules and yarn.lock (if you're using Yarn)
-/node_modules/
-/yarn.lock
+node_modules/
+yarn.lock
 
 # Ignore auto-generated files and logs
 # /log/*
@@ -47,8 +47,10 @@
 
 # Ignore cache, build, and other temporary files
 /tmp/*
-/.cache/
-/.sass-cache/
-/.bundler/
-/vendor/bundle
-storage/
+.cache/
+.sass-cache/
+.bundler/
+vendor/bundle
+
+# Ignore the storage folder to avoid uploading uploaded files
+/storage/
