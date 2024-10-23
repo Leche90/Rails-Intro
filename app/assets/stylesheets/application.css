@@ -1,3 +1,4 @@
+/* Navigation Styles */
 nav {
     text-align: center; /* Center the text inside the nav */
 }
@@ -20,4 +21,20 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline; /* Underline on hover */
+}
+
+/* Content Styles */
+body {
+    max-width: 800px;      /* Set a maximum width for readability */
+    margin: 0 auto;        /* Center the content */
+    padding: 20px;         /* Add padding around the content */
+    line-height: 1.6;      /* Increase line height for better readability */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 20px 0;        /* Add margin around headings */
+}
+
+p {
+    margin-bottom: 15px;   /* Space between paragraphs */
 }
