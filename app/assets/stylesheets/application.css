@@ -1,12 +1,16 @@
+nav {
+    text-align: center; /* Center the text inside the nav */
+}
+
 nav ul {
     list-style-type: none; /* Remove bullet points */
     padding: 0;           /* Remove default padding */
     margin: 0;            /* Remove default margin */
-    display: flex;        /* Use flexbox for horizontal layout */
+    display: inline-flex; /* Use inline-flex for horizontal layout */
 }
 
 nav ul li {
-    margin-right: 15px;   /* Space between menu items */
+    margin: 0 15px;      /* Space between menu items */
 }
 
 nav ul li a {
