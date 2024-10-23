@@ -25,7 +25,7 @@ nav ul li a:hover {
 
 /* Content Styles */
 body {
-    max-width: 800px;      /* Set a maximum width for readability */
+    max-width: 900px;      /* Set a maximum width for readability */
     margin: 0 auto;        /* Center the content */
     padding: 20px;         /* Add padding around the content */
     line-height: 1.6;      /* Increase line height for better readability */
