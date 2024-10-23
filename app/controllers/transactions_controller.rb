@@ -7,4 +7,8 @@ class TransactionsController < ApplicationController
       @transactions = Transaction.all # Show all transactions if no user is specified
     end
   end
+
+  def show
+    @transaction = Transaction.find(params[:id]) # Find the transaction by ID
+  end
 end
