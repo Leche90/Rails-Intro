@@ -1,8 +1,8 @@
-<!-- app/views/transactions/show.html.erb -->
 <h1>Transaction Details</h1>
 <p><strong>User:</strong> <%= @transaction.user.name %></p>
 <p><strong>Cryptocurrency:</strong> <%= @transaction.cryptocurrency.name %></p>
 <p><strong>Amount:</strong> <%= @transaction.amount %></p>
 <p><strong>Type:</strong> <%= @transaction.transaction_type %></p>
 
-<%= link_to 'Back to Transactions', transactions_path %>
+<!-- Back to Users link -->
+<%= link_to 'Back to Users', users_path %>
