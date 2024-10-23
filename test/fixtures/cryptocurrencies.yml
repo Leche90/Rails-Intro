@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  symbol: MyString
+  price: 9.99
+  market_cap: 
+  volume: 
+  change: 1.5
+
+two:
+  name: MyString
+  symbol: MyString
+  price: 9.99
+  market_cap: 
+  volume: 
+  change: 1.5
