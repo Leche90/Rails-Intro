@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cryptocurrency App</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Welcome to the Cryptocurrency App</h1>
+
+      <p>This is your one-stop platform for accessing up-to-date information on the world's leading cryptocurrencies. Whether you're an experienced trader or just getting started, our app provides you with essential data to make informed decisions.</p>
+
+      <h2>Key Features:</h2>
+      <ul>
+        <li><strong>Real-time Cryptocurrency Data:</strong> We pull live data from the CoinRanking API to give you the latest information on cryptocurrency prices, market caps, trading volumes, and price changes.</li>
+        <li><strong>User-Friendly Navigation:</strong> Easily navigate between different sections of the app to explore cryptocurrencies, view transaction histories, and learn more about the exchanges where you can buy and trade.</li>
+        <li><strong>Interactive Analytics:</strong> Analyze cryptocurrency trends with our intuitive data displays, helping you track the performance of various coins over time.</li>
+        <li><strong>User Transactions:</strong> Review your own transaction history and see how your investments have evolved.</li>
+        <li><strong>Global Cryptocurrency Exchanges:</strong> Learn more about top cryptocurrency exchanges like Binance, Coinbase, and Kraken, including their locations and the coins they support.</li>
+        <li><strong>Secure and Trusted:</strong> Powered by Rails, this application ensures robust security for your data, with seamless integration of APIs and the Faker gem for generating test data.</li>
+      </ul>
+
+        <h2>Purpose of This Project</h2>
+
+        <p>
+        The purpose of this application is to offer users a comprehensive overview of the current state of the cryptocurrency market. Users can view detailed information about different cryptocurrencies, including their market trends, and track the performance of individual coins. Additionally, the application allows the simulation of user transactions (e.g., buying and selling cryptocurrency) to showcase potential user behaviors in a financial market context.
+        </p>
+
+      <h2>Technologies Behind This App:</h2>
+      <ul>
+        <li><strong>Rails Framework:</strong> Fast, secure, and reliable web application framework powering our platform.</li>
+        <li><strong>CoinRanking API:</strong> For fetching real-time cryptocurrency market data.</li>
+        <li><strong>Faker Gem:</strong> Used to generate random user and transaction data for testing purposes.</li>
+        <li><strong>Bootstrap:</strong> Ensuring the design remains responsive and user-friendly.</li>
+      </ul>
+
+    </div>
+  </body>
+</html>
+
+<h2>Features of This Application</h2>
+
+<ul>
+  <li>
+    Display real-time data about cryptocurrencies fetched from the CoinRanking API.
+  </li>
+  <li>
+    Display fake user profiles and simulate buy/sell transactions for different cryptocurrencies.
+  </li>
+  <li>
+    Track cryptocurrency performance over time using daily change data.
+  </li>
+  <li>
+    Display associated cryptocurrency exchanges, seeded into the database.
+  </li>
+</ul>
+
+      <p>We aim to provide a seamless experience for all cryptocurrency enthusiasts. Explore the world of digital assets with ease!</p>

@@ -1,0 +1,16 @@
+<!-- app/views/transactions/index.html.erb -->
+<% if @user %>
+  <h1>Transactions for <%= @user.name %></h1>
+<% else %>
+  <h1>All Transactions</h1>
+<% end %>
+
+<ul>
+  <% @transactions.each do |transaction| %>
+    <li>
+      <strong>Cryptocurrency:</strong> <%= transaction.cryptocurrency.name %> |
+      <strong>Amount:</strong> <%= transaction.amount %> |
+      <strong>Type:</strong> <%= transaction.transaction_type %>
+    </li>
+  <% end %>
+</ul>

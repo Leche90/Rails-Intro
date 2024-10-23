@@ -1,0 +1,27 @@
+<!-- app/views/cryptocurrencies/show.html.erb -->
+<h1><%= @cryptocurrency.name %></h1>
+<p>Symbol: <%= @cryptocurrency.symbol %></p>
+<p>Price: <%= @cryptocurrency.price %></p>
+<p>Market Cap: <%= @cryptocurrency.market_cap %></p>
+<p>Volume: <%= @cryptocurrency.volume %></p>
+<p>Change (24h): <%= @cryptocurrency.change %>%</p>
+
+<p>Exchanges:</p>
+<ul>
+  <% @cryptocurrency.exchanges.each do |exchange| %>
+    <li><%= exchange.name %> - <%= exchange.location %></li>
+  <% end %>
+</ul>
+
+<p>Transactions:</p>
+<ul>
+  <% @cryptocurrency.transactions.each do |transaction| %>
+    <li>
+      <strong>User:</strong> <%= transaction.user.name %> |
+      <strong>Amount:</strong> <%= transaction.amount %> |
+      <strong>Type:</strong> <%= transaction.transaction_type %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to 'Back to Cryptocurrencies', cryptocurrencies_path %>

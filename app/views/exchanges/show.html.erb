@@ -1,0 +1,44 @@
+<!-- app/views/exchanges/show.html.erb -->
+
+<h1><%= @exchange.name %></h1>
+<p>Location: <%= @exchange.location %></p>
+
+<h2>Cryptocurrencies traded on this exchange:</h2>
+<ul>
+  <% @exchange.cryptocurrencies.each do |crypto| %>
+    <li>
+      <strong><%= crypto.name %> (<%= crypto.symbol %>)</strong><br>
+      Price: <%= number_to_currency(crypto.price) %><br>
+      Market Cap: <%= number_to_human(crypto.market_cap, units: { thousand: "K", million: "M", billion: "B" }) %><br>
+      Volume (24h): <%= number_to_human(crypto.volume, units: { thousand: "K", million: "M", billion: "B" }) %><br>
+      Change (24h): <%= crypto.change %>%
+    </li>
+  <% end %>
+</ul>
+
+<h3>Location on Map:</h3>
+
+<% if @exchange.latitude.present? && @exchange.longitude.present? %>
+  <!-- Map container -->
+  <div id="map" style="height: 400px; width: 100%;"></div>
+
+  <!-- Initialize Mapbox -->
+  <script>
+    mapboxgl.accessToken = '<%= ENV["MAPBOX_API_KEY"] %>'; // Ensure your token is stored securely
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11', // Choose a style
+      center: [<%= @exchange.longitude %>, <%= @exchange.latitude %>], // Longitude, Latitude of the exchange
+      zoom: 10
+    });
+
+    // Add marker
+    new mapboxgl.Marker()
+      .setLngLat([<%= @exchange.longitude %>, <%= @exchange.latitude %>])
+      .addTo(map);
+  </script>
+<% else %>
+  <p>No location available for this exchange.</p>
+<% end %>
+
+<%= link_to 'Back to Exchanges', exchanges_path %>

@@ -1,0 +1,10 @@
+<!-- app/views/users/index.html.erb -->
+<h1>Users</h1>
+<ul>
+  <% @users.each do |user| %>
+    <li>
+      <%= link_to user.name, user_path(user) %> |
+      <%= link_to 'View Transactions', user_transactions_path(user) %>
+    </li>
+  <% end %>
+</ul>

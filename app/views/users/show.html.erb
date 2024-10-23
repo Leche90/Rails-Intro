@@ -1,0 +1,16 @@
+<!-- app/views/users/show.html.erb -->
+<h1><%= @user.name %></h1>
+<p>Email: <%= @user.email %></p>
+<p>Transactions:</p>
+<ul>
+  <% @user.transactions.each do |transaction| %>
+    <li>
+      <strong>Cryptocurrency:</strong> <%= transaction.cryptocurrency.name %> |
+      <strong>Amount:</strong> <%= transaction.amount %> |
+      <strong>Type:</strong> <%= transaction.transaction_type %> |
+      <%= link_to 'View Transaction', transaction_path(transaction) %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to 'Back to Users', users_path %>

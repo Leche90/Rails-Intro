@@ -1,0 +1,18 @@
+<!-- app/views/exchanges/index.html.erb -->
+<h1>Exchanges</h1>
+
+<!-- Search form -->
+<%= form_with(url: exchanges_path, method: :get, local: true) do %>
+  <%= label_tag :query, "Search Exchanges:" %>
+  <%= text_field_tag :query, params[:query], placeholder: "Enter exchange name" %>
+  <%= submit_tag "Search" %>
+<% end %>
+
+<ul>
+  <% @exchanges.each do |exchange| %>
+    <li>
+      <%= link_to exchange.name, exchange_path(exchange) %> |
+      <%= link_to 'View Cryptocurrencies', exchange_cryptocurrencies_path(exchange) %>
+    </li>
+  <% end %>
+</ul>
