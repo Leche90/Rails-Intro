@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   has_many :transactions
-  has_and_belongs_to_many :cryptocurrencies
+  has_many :cryptocurrencies
 
   # Validations for each
   validates :name, presence: true

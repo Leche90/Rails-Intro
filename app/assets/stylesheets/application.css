@@ -38,3 +38,10 @@ h1, h2, h3, h4, h5, h6 {
 p {
     margin-bottom: 15px;   /* Space between paragraphs */
 }
+
+.about-image {
+    display: block;
+    margin: 20px auto; /* Centers the image and adds vertical space */
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto; /* Maintains the aspect ratio */
+}
